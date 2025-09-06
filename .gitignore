@@ -4,3 +4,5 @@ node_modules/
 # ENV FIles
 .env
 .env.*
+
+.DS_Store
