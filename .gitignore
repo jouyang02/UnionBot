@@ -1,8 +1,30 @@
-# NODE
+# NODE modules
 node_modules/
+**/node_modules/
+
+# Builds
+dist/
+build/
+**/dist/
+**/build/
 
 # ENV FIles
 .env
 .env.*
+**/.env
 
+# IDE/ Editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Lock Files
+pnpm-lock.yaml
+
+# OS files
 .DS_Store
+
+# Temporary Files
+*.tmp
+*.temp
