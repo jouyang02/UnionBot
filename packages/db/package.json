@@ -1,10 +1,13 @@
 {
-  "name": "@gameInfoHub_db",
+  "name": "@gameInfoHub/db",
   "version": "1.0.0",
-  "private": "true",
-  "types": "module",
+  "private": true,
   "description": "",
-  "main": "./src/index.js",
+  "type": "module",
+  "main": "./src/db-api.js",
+  "exports": {
+    ".": "./src/db-api.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "drizzle-kit generate",
@@ -14,14 +17,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
     "drizzle-orm": "^0.45.2",
     "postgres": "^3.4.9"
   },
   "devDependencies": {
     "@types/node": "^24.3.1",
-    "drizzle-kit": "^0.31.10",
-    "typescript": "^5.9.2"
+    "dotenv": "^17.2.3",
+    "drizzle-kit": "^0.31.10"
   }
 }
