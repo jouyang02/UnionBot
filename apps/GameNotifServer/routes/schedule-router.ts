@@ -3,7 +3,7 @@ import {
     Request,
     Response
 } from "express";
-import * as scheduleController from "../controllers/schedule-controller";
+import * as scheduleController from "../controllers/schedule-controller.js";
 
 const router = Router();
 
