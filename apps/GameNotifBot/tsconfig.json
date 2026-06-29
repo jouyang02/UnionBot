@@ -8,11 +8,18 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
+    // Types
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
+
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
-    "types": ["node"],
+    "types": [],
+    "moduleResolution": "nodenext",
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -28,6 +35,7 @@
     "exactOptionalPropertyTypes": true,
 
     // Style Options
+    // "esModuleInterop": true,
     // "noImplicitReturns": true,
     // "noImplicitOverride": true,
     // "noUnusedLocals": true,
@@ -37,13 +45,13 @@
 
     // Recommended Options
     "strict": true,
-    "verbatimModuleSyntax": true,
+    // "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
   },
-  
+
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
