@@ -1,6 +1,6 @@
+import dotenv from "dotenv";
 import express from "express";
 import cors, {CorsOptions} from "cors";
-import dotenv from "dotenv";
 import path from "path";
 import axios from "axios";
 
@@ -9,6 +9,7 @@ dotenv.config({
 });
 
 const port: number = Number(process.env.PORT) || 3000;
+// const db_uri: string | undefined = process.env.MONGODB_URI;
 
 const app = express();
 
