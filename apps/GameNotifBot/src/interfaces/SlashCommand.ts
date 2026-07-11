@@ -12,5 +12,5 @@ export interface SlashCommand {
           SlashCommandBuilder
         | SlashCommandOptionsOnlyBuilder
         | SlashCommandSubcommandsOnlyBuilder;
-    execute(interaction: CommandInteraction): Promise<void>;
+    execute(interaction: ChatInputCommandInteraction): Promise<unknown>;
 }

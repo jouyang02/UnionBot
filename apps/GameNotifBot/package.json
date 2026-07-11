@@ -16,9 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@gameInfoHub/db": "workspace:*",
+    "axios": "^1.16.1",
     "discord.js": "^14.24.2",
-    "dotenv": "^17.2.3",
-    "@gameInfoHub/db": "workspace:*"
+    "dotenv": "^17.2.3"
   },
   "devDependencies": {
     "@types/node": "^24.3.1",
