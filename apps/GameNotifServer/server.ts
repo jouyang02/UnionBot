@@ -1,28 +1,32 @@
-import express from "express";
-import cors, {CorsOptions} from "cors";
-import dotenv from "dotenv";
-import path from "path";
-import axios from "axios";
+// *************************************************************
+// OUTDATED FILE, DOES NOT MATCH WITH CURRENT WORKSPACE LAYOUT
+// *************************************************************
 
-dotenv.config({
-    path: path.resolve(__dirname,".env")
-});
+// import express from "express";
+// import cors, {CorsOptions} from "cors";
+// import dotenv from "dotenv";
+// import path from "path";
+// import axios from "axios";
 
-const port: number = Number(process.env.PORT) || 3000;
+// dotenv.config({
+//     path: path.resolve(__dirname,".env")
+// });
 
-const app = express();
+// const port: number = Number(process.env.PORT) || 3000;
 
-const corsOptions: CorsOptions = {
-    origin: ["http://localhost:3000"], // Allowed origins to access server
-    allowedHeaders: ["Content-Type", "Authorization"], // 
-    credentials: true,                  //Allowed cookies and auth headers
-}
+// const app = express();
 
-// CORS setup with options
-app.use(cors(corsOptions));
-app.use(express.json());
+// const corsOptions: CorsOptions = {
+//     origin: ["http://localhost:3000"], // Allowed origins to access server
+//     allowedHeaders: ["Content-Type", "Authorization"], // 
+//     credentials: true,                  //Allowed cookies and auth headers
+// }
 
-// Starts express server on port 3000
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+// // CORS setup with options
+// app.use(cors(corsOptions));
+// app.use(express.json());
+
+// // Starts express server on port 3000
+// app.listen(port, () => {
+//     console.log(`Server running on port ${port}`);
+// });
